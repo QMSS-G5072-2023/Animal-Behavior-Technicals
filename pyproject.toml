@@ -14,3 +14,7 @@ python = "^3.7"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.repositories]
+testpypi = "https://test.pypi.org/legacy/"
+
