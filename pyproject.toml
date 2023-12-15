@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "animal-behavior-technicals"
+version = "0.1.0"
+description = "This works with specific details of animal behavior measurement tools"
+authors = ["Arushi Saranath"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "animal_behavior_technicals"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
