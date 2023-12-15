@@ -37,6 +37,43 @@ def get_climate_zone(location_lat):
         return 'Unknown'
 
 # Example usage:
-latitude = 25 
-climate_zone = get_climate_zone(latitude)
-print(f"The climate zone for latitude {latitude} is: {climate_zone}")
+location_lat = 25 
+climate_zone = get_climate_zone(location_lat)
+print(f"The climate zone for latitude {location_lat} is: {climate_zone}")
+
+
+def get_region(location_long):
+    if location_long < 0:
+        return 'West'
+    elif location_long >= 0:
+        return 'East'
+    else:
+        return 'Unknown'
+
+# Example usage:
+location_long = -80  # Replace with the actual longitude value
+region = get_region(location_long)
+print(f"The region for longitude {location_long} is: {region}")
+
+def get_sensor_type(sensor_type_id):
+    if sensor_type_id == 653:
+        return 'GPS'
+    elif sensor_type_id == 2365683:
+        return 'Acceleration'
+    else:
+        return 'Unknown'
+
+# Example usage:
+sensor_id_1 = 653
+sensor_type_1 = get_sensor_type(sensor_id_1)
+print(f"Sensor ID {sensor_id_1} corresponds to: {sensor_type_1}")
+
+sensor_id_2 = 2365683
+sensor_type_2 = get_sensor_type(sensor_id_2)
+print(f"Sensor ID {sensor_id_2} corresponds to: {sensor_type_2}")
+
+unknown_sensor_id = 12345
+unknown_sensor_type = get_sensor_type(unknown_sensor_id)
+print(f"Sensor ID {unknown_sensor_id} corresponds to: {unknown_sensor_type}")
+
+

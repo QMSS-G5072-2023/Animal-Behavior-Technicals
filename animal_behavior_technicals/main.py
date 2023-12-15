@@ -29,9 +29,22 @@ def main():
         print(f"The temperature ({eobs_temperature_low}°C) is not low.")
 
     # Get climate zone for a specific location
-    location_latitude = 25
-    climate_zone = utils.get_climate_zone(location_latitude)
-    print(f"The climate zone for latitude {location_latitude} is: {climate_zone}")
+    location_lat = 25
+    climate_zone = utils.get_climate_zone(location_lat)
+    print(f"The climate zone for latitude {location_lat} is: {climate_zone}")
+
+    location_long = -80
+    region = utils.get_region(location_long)
+    print(f"The region for longitude {location_long} is: {region}")
+
+    # Example 4: Sensor Type
+    sensor_id_1 = 653
+    sensor_type_1 = utils.get_sensor_type(sensor_id_1)
+    print(f"Sensor ID {sensor_id_1} corresponds to: {sensor_type_1}")
+
+    sensor_id_2 = 2365683
+    sensor_type_2 = utils.get_sensor_type(sensor_id_2)
+    print(f"Sensor ID {sensor_id_2} corresponds to: {sensor_type_2}")
 
 if __name__ == "__main__":
     main()
