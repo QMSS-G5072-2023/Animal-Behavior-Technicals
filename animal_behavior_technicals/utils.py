@@ -45,7 +45,7 @@ print(f"The climate zone for latitude {location_lat} is: {climate_zone}")
 def get_region(location_long):
     if location_long < 0:
         return 'West'
-    elif location_long >= 0:
+    elif location_long > 0:
         return 'East'
     else:
         return 'Unknown'

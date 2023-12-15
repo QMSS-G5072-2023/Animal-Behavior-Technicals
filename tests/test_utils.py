@@ -18,3 +18,13 @@ def test_get_climate_zone():
     assert utils.get_climate_zone(45) == 'Temperate'
     assert utils.get_climate_zone(-75) == 'Polar'
     assert utils.get_climate_zone(120) == 'Unknown'
+
+def test_get_region():
+    assert utils.get_region(-80) == 'West'
+    assert utils.get_region(80) == 'East'
+    assert utils.get_region(0) == 'Unknown'
+
+def test_get_sensor_type():
+    assert utils.get_sensor_type(653) == 'GPS'
+    assert utils.get_sensor_type(2365683) == 'Acceleration'
+    assert utils.get_sensor_type(12345) == 'Unknown'
