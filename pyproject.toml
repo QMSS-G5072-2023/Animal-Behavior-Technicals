@@ -15,6 +15,6 @@ python = "^3.7"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.repositories]
-testpypi = "https://test.pypi.org/legacy/"
+[project.urls]
+Homepage = "https://github.com/pypa//QMSS-G5072-2023/Animal-Behavior-Technicals"
 
