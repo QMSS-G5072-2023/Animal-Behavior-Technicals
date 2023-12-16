@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "animal-behavior-technicals"
 version = "0.1.1"
-description = "This works with specific details of animal behavior measurement tools"
+description = "This package is designed to study data from the movebank organisation. Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, and the University of Konstanz and studies movements of animals, different attributes and has a lot of instruments to measure these observations. This package aims to make the techncalities of these instruments easier to work with."
 authors = ["Arushi Saranath"]
 license = "MIT"
 readme = "README.md"
@@ -9,6 +9,7 @@ packages = [{include = "animal_behavior_technicals"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+requests
 
 
 [build-system]
