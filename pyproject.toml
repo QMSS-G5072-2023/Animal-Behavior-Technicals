@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "animal-behavior-technicals"
-version = "0.1.0"
+version = "0.1.1"
 description = "This works with specific details of animal behavior measurement tools"
 authors = ["Arushi Saranath"]
 license = "MIT"
