@@ -87,9 +87,14 @@ tests\test_utils.py ......                                                      
 
 =============================================================== 8 passed in 0.11s ===============================================================
 ```
+# Contributing
+You are welcome to contribute to this project. Please make sure to abide by the code of conduct of this package and Movebank.
+
 # Python version
 This package requires a python version of 3.7 or higher but does not have any dependencies. However Requests will be required to access the API.
 
+# Contact 
+arushisaranath@gmail.com 
 # License
 This package has been created by Arushi Gautam Saranath. (username- arushisaranath) and is licensed under the terms of the MIT license.
 
